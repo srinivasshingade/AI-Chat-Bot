@@ -1,0 +1,77 @@
+{"samples": 
+    [
+        {"tag": "greeting",
+         "questions": ["Hi there.", "How are you ?", "Is anyone there?", "Hello", "Good day"],
+         "answers": ["Hello, thanks for asking.", "Good to see you again.", "Hi there, how can I help?"]
+        },
+        {"tag": "goodbye",
+         "questions": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "answers": ["See you!", "Have a nice day", "Bye! Come back again soon.","Have a Wonderful rest of your day!"]
+         
+        },
+        {"tag": "thanks",
+         "questions": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "answers": ["Happy to help!.", "Any time!", "My pleasure."] 
+        },
+
+        {"tag": "noanswer",
+         "questions": [],
+         "answers": ["Sorry, can't understand you.", "Please give me more info.", "Not sure I understand."],
+         "context": ""
+        },
+
+        {"tag": "options",
+         "questions": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","What you have?"],
+         "answers": ["I can guide you through our Bar Food, Mains, Beers and Wines, Specials of the Day.",
+            "I can help you in making the best selections from our Bar Food, Mains, Beers and Wines, Specials of the Day.",
+            "I can help you in making best choice from our menu i.e Bar Food, Mains, Beers and Wines, Specials of the Day."],
+            "context_set": "barfood"
+        },
+        {"tag": "barfoodmenu",
+         "questions": ["What do you have in bar food", "Can you list the bar food menu", "I am intersted in bar food menu" ],
+         "answers": ["We have Ultimate Nachos, Chips and Salsa and Mozzrella sticks on the Bar Food Menu.","We have French Fries, Street Taco and Chicken Quesadilla on Bar Food Menu"],
+         "context_filter": "barfood"
+        },
+
+        {
+         "tag":"beer",
+         "questions" : ["Which beer do you have ?","Can you list beer menu ?","What do you have in beers ?"],
+         "answers" : ["We have Corona, Modelo, budlight in beers.", "Currently, we are available with Budlight, Modello, Corona on the menu."],
+         "context_set": "beercost"
+        },
+
+        {
+         "tag":"beerprice",
+         "questions" : ["What are the beer prices ?","Can you list beer prices ?","How much is the beer for ?"],
+         "answers" : ["Well,  Corona is for $7 , Modelo for $9 and Budlight for $10.", "Corona for $7, Modelo for $9 and Budlight for $10."],
+         "context_filter": "beercost"
+
+        },
+
+        {
+         "tag":"Addbeer",
+         "questions" : ["I would like to take beer","I will go for wine"],
+         "answers" : ["Beer has been added to your order !!!"]
+        },
+
+        {
+         "tag":"wine",
+         "questions" : ["Which wines do you have ?","I am intersted in wines ?","Can you list wine menu ?"],
+         "answers" : ["We have Dark horse Merlot, Zinfandel, Pinot noir in Wines.", "We have Dark horse Merlot, Zinfandel, Pinot noir in Wines"],
+         "context_set" : "winecost"
+        },
+
+        {
+         "tag":"wineprice",
+         "questions" : ["What are the wine prices ?","Can you list wine prices ?","How much is the wine for ?"],
+         "answers" : ["Dark horse Merlot is for $5 , Zinfandel for $9, Pinot Noir for $15.", "Dark horse Merlot for $7, Zinfandel for $9, Pinot Noir for $10."],
+         "context_filter": "winecost"
+        },
+        {
+         "tag":"Addwine",
+         "questions" : ["I would like to take wine","I will go for wine"],
+         "answers" : ["Wine has been added to your order !!!"]
+          }
+
+   ]
+}
