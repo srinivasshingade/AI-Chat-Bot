@@ -26,3 +26,18 @@ Used Flask for hosting the website
  
 **Step 5**: Close the application
 In your terminal, press Control+C to terminate the app.
+
+You can also run the application in your terminal. Use python ```3.6``` </br>
+**Step 1** : Installing all the dependencies 
+```
+   pip install nltk
+   pip install numpy
+   pip install tensorflow
+   pip install tflearn 
+```
+
+**Step 2** : Run the following files <br/>
+Execute ```main.py``` to train the model and save the data structure </br>
+Execute ```run.py``` to load the saved model and recreate Neural Network
+   
+ 
