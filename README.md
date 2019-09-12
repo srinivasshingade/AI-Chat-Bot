@@ -16,7 +16,7 @@ Used Flask for hosting the website
  **Step 2**: Built the docker image
  ```docker build -t chatbotapp:latest .```
  
- **Step 3**: Run the cntainer
+ **Step 3**: Run the container
  ```docker run -d -p 5000:5000 chatbotapp```
  
  **Step 4** : Go to Web Browser
